@@ -1,0 +1,35 @@
+* add a user name it as sonar
+  adduser sonar
+
+* create a password for sonar
+  passwd sonar
+
+enter password and confirm it (as usual give it as root)
+
+* now install java jdk and Wget (hoping both are available in ur systems)
+
+* now switch to sonar user by using 
+  su sonar
+
+cd /home/sonar/
+
+
+* install
+
+ sudo su -
+ yum install wget unzip -y
+ yum install java -y
+
+* exit from the root user
+
+ cd sonar
+ wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip
+ unzip sonarqube-7.8
+ cd sonarqube-7.8
+ cd bin
+ cd linux-64
+ ls
+ chmod 777 sonar.sh
+ ./sonar.sh start / stop / status / restart
+
+ port:9000
