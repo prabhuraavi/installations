@@ -1,0 +1,26 @@
+Step 1: Install Docker Engine on your machine from 
+        https://docs.docker.com/desktop/windows/install/
+Step 2: Restart the device
+Step 3: Check the system information/pre-requisites
+        -> cmd prompt -> systeminfo
+        if it shows below content we are good to go
+        Hyper-V Requirements:     VM Monitor Mode Extensions: Yes
+                                  Virtualization Enabled In Firmware: Yes
+                                  Second Level Address Translation: Yes
+                                  Data Execution Prevention Available: Yes
+Step 4: Install Oracle VirtualBox
+Step 5: Install Minikube from 
+        https://minikube.sigs.k8s.io/docs/start/
+        Select "INSTALLER"
+        Click on .exe (Minikube.exe file will download)
+Step 6: Double click on the minikube.exe
+        Follow the general procedure for installation
+Step 7: Make sure you open Oracle VirtualBox
+        in Powershell/CMD prompt provide (if it is in open state please close and reopen the terminals)
+        minikube config set driver virtualbox
+        minikube start --driver=virtualbox(enter)
+        Now we are able to see prerequisites are downloading in the terminal
+        May take some time to download the related stuff around 500.00 MB
+Ste 8: Install Kubectl on windows
+        open CMD Prompt and paste the command
+        curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/windows/amd64/kubectl.exe

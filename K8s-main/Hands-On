@@ -1,0 +1,22 @@
+Execution Part
+--------------
+To start minikube
+        minikube start --driver=virtualbox (make sure Oracle VB in open state)
+
+Basic Commands:
+* To check the list of nodes
+        kubectl get nodes
+* To view the dashboard
+        minikube dashboard   //will navigate to the default browser to view the content
+        kubec
+* Adding an app from dashboard
+        Click on + on top right corner.
+        Select "Create from Form"
+        App-Name        : nginx-app
+        Container image : nginx
+        No of Pods      : 2
+        Click on Deploy
+
+* To view the deployed pods/available pods
+        kubectl get pods
+        
